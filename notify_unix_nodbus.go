@@ -9,7 +9,7 @@ import (
 )
 
 // Notify sends desktop notification.
-func Notify(title, message, appIcon string) error {
+func Notify(title, message, appIcon, appID string) error {
 	appIcon = pathAbs(appIcon)
 
 	cmd := func() error {

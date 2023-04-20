@@ -13,7 +13,7 @@ import (
 // Notify sends desktop notification.
 //
 // On Linux it tries to send notification via D-Bus and it will fallback to `notify-send` binary.
-func Notify(title, message, appIcon string) error {
+func Notify(title, message, appIcon, appID string) error {
 	appIcon = pathAbs(appIcon)
 
 	cmd := func() error {
